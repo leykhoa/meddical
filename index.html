@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meddical</title>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+        <!-- my style -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="./assets/css/desktop.css"
+            media="screen and (min-width: 992px)"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Start header -->
+        <header>
+            <div class="info-web">
+                <div class="container">
+                    <h2 class="info-web__logo"><span>Med</span>dical</h2>
+                    <div class="info-web--content">
+                        <div class="info-web__item">
+                            <div class="info-web__item--icon">
+                                <i class="icon icon-call"></i>
+                            </div>
+                            <div class="info-web__item--sub">
+                                <p>Emergency</p>
+                                <p>(237) 681-812-255</p>
+                            </div>
+                        </div>
+                        <div class="info-web__item">
+                            <div class="info-web__item--icon">
+                                <i class="icon icon-time"></i>
+                            </div>
+                            <div class="info-web__item--sub">
+                                <p>Location</p>
+                                <p>0123 Some Place</p>
+                            </div>
+                        </div>
+                        <div class="info-web__item">
+                            <div class="info-web__item--icon">
+                                <i class="icon icon-local"></i>
+                            </div>
+                            <div class="info-web__item--sub">
+                                <p>Work Hour</p>
+                                <p>09:00 - 20:00 Everyday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar container">
+                <div class="navbar--brand">
+                    <h2 class="info-web__logo info-web__logo--mobile">
+                        <span>Med</span>dical
+                    </h2>
+                    <!-- Navbar content -->
+                    <div class="navbar__feature">
+                        <div class="icon icon-search"></div>
+                        <button class="btn btn--rounded">Appointment</button>
+                        <div
+                            class="icon icon-bar"
+                            onclick="handleToggle(this)"
+                            id="toggle-open"
+                        ></div>
+                        <div
+                            class="icon icon-x display-none"
+                            onclick="handleToggle(this)"
+                            id="toggle-close"
+                        ></div>
+                    </div>
+                </div>
+                <ul class="navbar__menu display-none">
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="btn btn--rounded">
+                        <a href="book-appointment.html" target="_blank"
+                            >Appointment</a
+                        >
+                    </button>
+                </ul>
+            </nav>
+        </header>
+        <!-- End header -->
+        <main>
+            <!-- Start hero -->
+            <div class="hero section">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__content__text">
+                            <h3 class="text-title--sub text-title">
+                                Caring for Life
+                            </h3>
+                            <div class="text-title--main text-title">
+                                <h2>Leading the Way</h2>
+                                <h2>in Medical Excellence</h2>
+                            </div>
+                        </div>
+                        <div class="hero__content__other">
+                            <button class="btn - btn--rounded">
+                                Our Services
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End hero -->
+            <div class="container">
+                <!-- Start book bar -->
+                <div class="section display-desktop" id="book-bar">
+                    <div class="card">
+                        <span>Book an Appointment</span>
+                        <i class="icon icon-calendar"></i>
+                    </div>
+                    <div class="card">
+                        <span>Book an Appointment</span>
+                        <i class="icon icon-team"></i>
+                    </div>
+                    <div class="card">
+                        <span>Book an Appointment</span>
+                        <i class="icon icon-cash"></i>
+                    </div>
+                </div>
+                <!-- End book bar -->
+                <!-- Start section -->
+                <section class="section">
+                    <div class="section__title">
+                        <h3 class="text-title--sub text-title">
+                            Welcome to Meddical
+                        </h3>
+                        <h2 class="text-title--main text-title">
+                            A Great Place to Receive Care
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Quisque placerat scelerisque tortor ornare
+                            ornare. Convallis felis vitae tortor augue. Velit
+                            nascetur proin massa in. Consequat faucibus
+                            porttitor enim et.
+                        </p>
+                    </div>
+                    <div class="section__navigation">
+                        <a href="#" target="_blank">Learn More </a
+                        ><i class="icon icon-arrow-right"></i>
+                    </div>
+                </section>
+                <div class="section">
+                    <div class="section__image">
+                        <img
+                            src="./assets/images/banner-1.png"
+                            alt=""
+                            width="100%"
+                        />
+                    </div>
+                </div>
+                <!-- Start service -->
+                <section class="section" id="services">
+                    <div class="section__title">
+                        <h3 class="text-title--sub text-title">
+                            Care you can believe in
+                        </h3>
+                        <h2 class="text-title--main text-title">
+                            Our Services
+                        </h2>
+                    </div>
+                    <div class="section__content">
+                        <div class="service-list">
+                            <div class="card row">
+                                <div class="card__item col-6 col-lg-12">
+                                    <div class="card--icon">
+                                        <i class="icon icon-drug"></i>
+                                    </div>
+                                    <div class="card--title">Free Checkup</div>
+                                </div>
+                                <div class="card__item col-6 col-lg-12">
+                                    <div class="card--icon">
+                                        <i class="icon icon-heart"></i>
+                                    </div>
+                                    <div class="card--title">Cardiogram</div>
+                                </div>
+                                <div class="card__item col-6 col-lg-12">
+                                    <div class="card--icon">
+                                        <i class="icon icon-cross"></i>
+                                    </div>
+                                    <div class="card--title">Dna Testing</div>
+                                </div>
+                                <div class="card__item col-6 col-lg-12">
+                                    <div class="card--icon">
+                                        <i class="icon icon-bottle"></i>
+                                    </div>
+                                    <div class="card--title">Blood Bank</div>
+                                </div>
+                            </div>
+                            <div class="card__footer bg-primary">View All</div>
+                        </div>
+                        <div class="section__content--main display-desktop">
+                            <div class="text-title">
+                                A passion for putting patients first.
+                            </div>
+                            <ul class="row dots">
+                                <li class="col-6">A Passion for Healing</li>
+                                <li class="col-6">5-Star Care</li>
+                                <li class="col-6">All our best</li>
+                                <li class="col-6">Believe in Us</li>
+                                <li class="col-6">A Legacy of Excellence</li>
+                                <li class="col-6">A Legacy of Excellence</li>
+                            </ul>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque placerat scelerisque
+                                tortor ornare ornare. Quisque placerat
+                                scelerisque tortor ornare ornare Convallis felis
+                                vitae tortor augue. Velit nascetur proin massa
+                                in. Consequat faucibus porttitor enim et.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque placerat scelerisque.
+                                Convallis felis vitae tortor augue. Velit
+                                nascetur proin massa in.
+                            </p>
+                        </div>
+                        <div class="section__content--aside display-desktop">
+                            <img
+                                src="./assets/images/service-1.png"
+                                alt="service-1"
+                            />
+                            <img
+                                src="./assets/images/service-2.png"
+                                alt="service-2"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <!-- End service -->
+            </div>
+            <!-- Start specialties -->
+            <section class="section" id="specialties">
+                <div class="section__title">
+                    <h3 class="text-title--sub text-title">Always Caring</h3>
+                    <h2 class="text-title--main text-title">Our Specialties</h2>
+                </div>
+                <div class="container display-desktop">
+                    <div id="specialty-list" class="card row">
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Neurology</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Bones</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Oncology</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Otorhinolaryngology</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Ophthalmology</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Cardiovascular</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Pulmonology</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Renal Medicine</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Gastroenterology</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Urology</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Dermatology</div>
+                        </div>
+                        <div class="card__item col-3">
+                            <div class="card--icon">
+                                <i class="icon icon-heart-2"></i>
+                            </div>
+                            <div class="card--title">Gynaecology</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="container">
+                        <div class="text-title">
+                            <h2>Book an Appointment</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque placerat scelerisque
+                                tortor ornare ornare. Convallis felis vitae
+                                tortor augue. Velit nascetur proin massa in.
+                                Consequat faucibus porttitor enim et.
+                            </p>
+                        </div>
+                        <form class="form--book row">
+                            <div class="col-lg-6">
+                                <div class="form--book__item">
+                                    <span>Name</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Email</span>
+                                    <input type="email" />
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Date</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Doctor</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form--book__item">
+                                    <span>Gender</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Phone</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Time</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Department</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form--book__item message">
+                                    <span>Message</span>
+                                    <textarea
+                                        name="message"
+                                        id=""
+                                        cols="30"
+                                        rows="10"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <button class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End specialties -->
+            <div class="container">
+                <!-- Start trust care -->
+                <section class="section" id="doctors">
+                    <div class="section__title">
+                        <h3 class="text-title--sub text-title">Trusted Care</h3>
+                        <h2 class="text-title--main text-title">Our Doctors</h2>
+                    </div>
+                    <div class="section__content">
+                        <div id="slick-doctors" class="slick-custom-center">
+                            <div class="slider slider-center">
+                                <div class="slider__item">
+                                    <img src="./assets/images/doctor-1.png" />
+                                    <div class="card">
+                                        <div>Doctor’s Name</div>
+                                        <div>Neurology</div>
+                                        <div class="social-group">
+                                            <a href="#"
+                                                ><i class="icon icon-linkedin">
+                                                </i></a
+                                            ><a href="#"
+                                                ><i class="icon icon-fb"></i></a
+                                            ><a href="#"
+                                                ><i class="icon icon-itg"></i
+                                            ></a>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn--primary">
+                                        View Profile
+                                    </button>
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./assets/images/doctor-2.png" />
+                                    <div class="card">
+                                        <div>Doctor’s Name</div>
+                                        <div>Neurology</div>
+                                        <div class="social-group">
+                                            <a href="#"
+                                                ><i class="icon icon-linkedin">
+                                                </i></a
+                                            ><a href="#"
+                                                ><i class="icon icon-fb"></i></a
+                                            ><a href="#"
+                                                ><i class="icon icon-itg"></i
+                                            ></a>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn--primary">
+                                        View Profile
+                                    </button>
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./assets/images/doctor-3.png" />
+                                    <div class="card">
+                                        <div>Doctor’s Name</div>
+                                        <div>Neurology</div>
+                                        <div class="social-group">
+                                            <a href="#"
+                                                ><i class="icon icon-linkedin">
+                                                </i></a
+                                            ><a href="#"
+                                                ><i class="icon icon-fb"></i></a
+                                            ><a href="#"
+                                                ><i class="icon icon-itg"></i
+                                            ></a>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn--primary">
+                                        View Profile
+                                    </button>
+                                </div>
+                                <div class="slider__item">
+                                    <img src="./assets/images/doctor-3.png" />
+                                    <div class="card">
+                                        <div>Doctor’s Name</div>
+                                        <div>Neurology</div>
+                                        <div class="social-group">
+                                            <a href="#"
+                                                ><i class="icon icon-linkedin">
+                                                </i></a
+                                            ><a href="#"
+                                                ><i class="icon icon-fb"></i></a
+                                            ><a href="#"
+                                                ><i class="icon icon-itg"></i
+                                            ></a>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn--primary">
+                                        View Profile
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End trust care -->
+                <!-- Start info -->
+                <section class="section display-mobile" id="info">
+                    <div class="section__title">
+                        <h3 class="text-title--sub text-title">
+                            Better information, better health
+                        </h3>
+                        <h2 class="text-title--main text-title">Our Doctors</h2>
+                    </div>
+                    <div class="section__content"></div>
+                </section>
+                <!-- End info -->
+                <!-- Start news -->
+                <section class="section display-desktop" id="news">
+                    <div class="section__title">
+                        <h3 class="text-title--sub text-title">
+                            Better information, better health
+                        </h3>
+                        <h2 class="text-title--main text-title">News</h2>
+                    </div>
+                    <div class="section__content">
+                        <div class="slick-custom">
+                            <div class="slider slider-one">
+                                <div class="slider__item">
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <img
+                                                    src="./assets/images/news-1.png"
+                                                    alt="news-1"
+                                                />
+                                            </div>
+                                            <div class="card__text">
+                                                <p class="card__text--small">
+                                                    Monday 05, September 2021 |
+                                                    By Author
+                                                </p>
+                                                <p>
+                                                    This Article’s Title goes
+                                                    Here, but not too long.
+                                                </p>
+                                                <div class="card__footer">
+                                                    <div class="status--seen">
+                                                        <i
+                                                            class="icon icon-eyes"
+                                                        ></i>
+                                                        <span>68</span>
+                                                    </div>
+                                                    <div class="status--like">
+                                                        <i
+                                                            class="icon icon-heart-3"
+                                                        ></i>
+                                                        <span>86</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End news -->
+                <!-- Start contact -->
+                <section class="section display-desktop" id="contact">
+                    <div class="section__title">
+                        <h3 class="text-title--sub text-title">Get in touch</h3>
+                        <h2 class="text-title--main text-title">Contact</h2>
+                    </div>
+                    <div class="section__content">
+                        <div class="card__item">
+                            <div class="card--icon">
+                                <i class="icon icon-call-2"></i>
+                            </div>
+                            <div class="card__item__title">
+                                <p class="card__title--main">Emergency</p>
+                                <p>(237) 681-812-255</p>
+                                <p>(237) 666-331-894</p>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card--icon">
+                                <i class="icon icon-local-2"></i>
+                            </div>
+                            <div class="card__item__title">
+                                <p class="card__title--main">Location</p>
+                                <p>0123 Some place</p>
+                                <p>9876 Some country</p>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card--icon">
+                                <i class="icon icon-mail"></i>
+                            </div>
+                            <div class="card__item__title">
+                                <p class="card__title--main">Email</p>
+                                <p>fildineeesoe@gmil.com</p>
+                                <p>myebstudios@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card--icon">
+                                <i class="icon icon-time-2"></i>
+                            </div>
+                            <div class="card__item__title">
+                                <p class="card__title--main">Working Hours</p>
+                                <p>Mon-Sat 09:00-20:00</p>
+                                <p>Sunday Emergency only</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End contact -->
+            </div>
+        </main>
+        <!-- Start footer -->
+        <footer class="display-desktop">
+            <nav class="navbar container">
+                <div class="navbar--brand">
+                    <h2 class="info-web__logo">Meddical</h2>
+                    <div class="navbar__content">
+                        Leading the Way in Medical Execellence, Trusted Care.
+                    </div>
+                </div>
+                <ul class="navbar__menu navbar__menu--column">
+                    <div class="title">Important Links</div>
+                    <li><a href="book-appointment.html">Appointment</a></li>
+                    <li><a href="">Doctors</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+                <ul class="navbar__menu navbar__menu--column">
+                    <div class="title">Contact Us</div>
+                    <li>
+                        <a href="tel:+237681-812-255"
+                            >Call: (237) 681-812-255</a
+                        >
+                    </li>
+                    <li>
+                        <a href="mailto: fildineesoe@gmail.com"
+                            >Email: fildineesoe@gmail.com</a
+                        >
+                    </li>
+                    <li><a href="">Address: 0123 Some place</a></li>
+                    <li><a href="">Some country</a></li>
+                </ul>
+                <div class="navbar__feature">
+                    <div class="title">Newsletter</div>
+                    <div>
+                        <input
+                            class="btn"
+                            type="text"
+                            placeholder="Enter your email address"
+                        /><i class="icon icon-nav"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="footer--info">
+                <p>© 2021 Hospital’s name All Rights Reserved by PNTEC-LTD</p>
+                <div class="social-group">
+                    <a href="#"><i class="icon icon-linkedin-2"> </i></a
+                    ><a href="#"><i class="icon icon-fb-2"></i></a
+                    ><a href="#"><i class="icon icon-itg-2"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+        <!-- Slick carousel -->
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <!-- my script -->
+        <script src="./assets/script.js"></script>
+    </body>
+</html>

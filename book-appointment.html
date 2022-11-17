@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book an Appointment - Meddical</title>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+        <!-- my style -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="./assets/css/desktop.css"
+            media="screen and (min-width: 992px)"
+        />
+        <link rel="stylesheet" href="./assets/css/components.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body id="appointment">
+        <!-- Start header -->
+        <header>
+            <div class="info-web">
+                <div class="container">
+                    <h2 class="info-web__logo"><span>Med</span>dical</h2>
+                    <div class="info-web--content">
+                        <div class="info-web__item">
+                            <div class="info-web__item--icon">
+                                <i class="icon icon-call"></i>
+                            </div>
+                            <div class="info-web__item--sub">
+                                <p>Emergency</p>
+                                <p>(237) 681-812-255</p>
+                            </div>
+                        </div>
+                        <div class="info-web__item">
+                            <div class="info-web__item--icon">
+                                <i class="icon icon-time"></i>
+                            </div>
+                            <div class="info-web__item--sub">
+                                <p>Location</p>
+                                <p>0123 Some Place</p>
+                            </div>
+                        </div>
+                        <div class="info-web__item">
+                            <div class="info-web__item--icon">
+                                <i class="icon icon-local"></i>
+                            </div>
+                            <div class="info-web__item--sub">
+                                <p>Work Hour</p>
+                                <p>09:00 - 20:00 Everyday</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar container">
+                <div class="navbar--brand">
+                    <h2 class="info-web__logo info-web__logo--mobile">
+                        <span>Med</span>dical
+                    </h2>
+                    <!-- Navbar content -->
+                    <div class="navbar__feature">
+                        <div class="icon icon-search"></div>
+                        <button class="btn btn--rounded">Appointment</button>
+                        <div
+                            class="icon icon-bar"
+                            onclick="handleToggle(this)"
+                            id="toggle-open"
+                        ></div>
+                        <div
+                            class="icon icon-x display-none"
+                            onclick="handleToggle(this)"
+                            id="toggle-close"
+                        ></div>
+                    </div>
+                </div>
+                <ul class="navbar__menu display-none">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <button class="btn btn--rounded">Appointment</button>
+                </ul>
+            </nav>
+        </header>
+        <!-- End header -->
+        <main>
+            <!-- Start hero -->
+            <div class="hero section">
+                <div class="container">
+                    <div class="hero__content">
+                        <div class="hero__content__text">
+                            <h3 class="text-title--sub text-title">
+                                Home / Appointment
+                            </h3>
+                            <div class="text-title--main text-title">
+                                <h2>Book an Appointment</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End hero -->
+            <div class="container">
+                <!-- Start book-appointment -->
+                <section class="section book-appointment">
+                    <div class="book">
+                        <div class="section__title">
+                            <h2 class="text-title--main text-title">
+                                Book an Appointment
+                            </h2>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque placerat scelerisque
+                                tortor ornare ornare. Convallis felis vitae
+                                tortor augue. Velit nascetur proin massa in.
+                                Consequat faucibus porttitor enim et.
+                            </p>
+                        </div>
+                        <form class="section__content form--book row">
+                            <div class="col-lg-6">
+                                <div class="form--book__item">
+                                    <span>Name</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Email</span>
+                                    <input type="email" />
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Date</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Doctor</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form--book__item">
+                                    <span>Gender</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Phone</span>
+                                    <input type="text" />
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Time</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                                <div class="form--book__item">
+                                    <span>Department</span>
+                                    <i class="icon icon-arrow-down-n"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form--book__item message">
+                                    <span>Message</span>
+                                    <textarea
+                                        name="message"
+                                        id=""
+                                        cols="30"
+                                        rows="10"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <button class="btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="shedule">
+                        <div class="card">
+                            <div class="card__title">
+                                <h2>Shedule hours</h2>
+                            </div>
+                            <div class="card__content">
+                                <div class="row--custom row">
+                                    <p>Monday</p>
+                                    <div>&#8212;</div>
+                                    <span>09:00 AM - 07:00 PM</span>
+                                </div>
+                                <div class="row--custom row">
+                                    <p>Tuesday</p>
+                                    <div>&#8212;</div>
+                                    <span>09:00 AM - 07:00 PM</span>
+                                </div>
+                                <div class="row--custom row">
+                                    <p>Wednesday</p>
+                                    <div>&#8212;</div>
+                                    <span>09:00 AM - 07:00 PM</span>
+                                </div>
+                                <div class="row--custom row">
+                                    <p>Thursday</p>
+                                    <div>&#8212;</div>
+                                    <span>09:00 AM - 07:00 PM</span>
+                                </div>
+                                <div class="row--custom row">
+                                    <p>Friday</p>
+                                    <div>&#8212;</div>
+                                    <span>09:00 AM - 07:00 PM</span>
+                                </div>
+                                <div class="row--custom row">
+                                    <p>Saturday</p>
+                                    <div>&#8212;</div>
+                                    <span>09:00 AM - 07:00 PM</span>
+                                </div>
+                                <div class="row--custom row">
+                                    <p>Sunday</p>
+                                    <div>&#8212;</div>
+                                    <span>Closed</span>
+                                </div>
+                                <hr />
+                                <div class="info-web__item">
+                                    <div class="info-web__item--icon">
+                                        <i class="icon icon-call-3"></i>
+                                    </div>
+                                    <div class="info-web__item--sub">
+                                        <p>Emergency</p>
+                                        <p>(237) 681-812-255</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End trust care -->
+
+                <!-- Map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15731.951090496856!2d105.568023!3d9.682084!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1668659724734!5m2!1svi!2s"
+                    width="100%"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="section"
+                ></iframe>
+            </div>
+
+            <div class="container">
+                <!-- Start info -->
+                <section class="section display-desktop" id="contact">
+                    <div class="section__title">
+                        <h3 class="text-title--sub text-title">Get in touch</h3>
+                        <h2 class="text-title--main text-title">Contact</h2>
+                    </div>
+                    <div class="section__content">
+                        <div class="card__item">
+                            <div class="card--icon">
+                                <i class="icon icon-call-2"></i>
+                            </div>
+                            <div class="card__item__title">
+                                <p class="card__title--main">Emergency</p>
+                                <p>(237) 681-812-255</p>
+                                <p>(237) 666-331-894</p>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card--icon">
+                                <i class="icon icon-local-2"></i>
+                            </div>
+                            <div class="card__item__title">
+                                <p class="card__title--main">Location</p>
+                                <p>0123 Some place</p>
+                                <p>9876 Some country</p>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card--icon">
+                                <i class="icon icon-mail"></i>
+                            </div>
+                            <div class="card__item__title">
+                                <p class="card__title--main">Email</p>
+                                <p>fildineeesoe@gmil.com</p>
+                                <p>myebstudios@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <div class="card--icon">
+                                <i class="icon icon-time-2"></i>
+                            </div>
+                            <div class="card__item__title">
+                                <p class="card__title--main">Working Hours</p>
+                                <p>Mon-Sat 09:00-20:00</p>
+                                <p>Sunday Emergency only</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End info -->
+            </div>
+        </main>
+        <!-- Start footer -->
+        <footer class="display-desktop">
+            <nav class="navbar container">
+                <div class="navbar--brand">
+                    <h2 class="info-web__logo">Meddical</h2>
+                    <div class="navbar__content">
+                        Leading the Way in Medical Execellence, Trusted Care.
+                    </div>
+                </div>
+                <ul class="navbar__menu navbar__menu--column">
+                    <div class="title">Important Links</div>
+                    <li><a href="">Appointment</a></li>
+                    <li><a href="">Doctors</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+                <ul class="navbar__menu navbar__menu--column">
+                    <div class="title">Contact Us</div>
+                    <li>
+                        <a href="tel:+237681-812-255"
+                            >Call: (237) 681-812-255</a
+                        >
+                    </li>
+                    <li>
+                        <a href="mailto: fildineesoe@gmail.com"
+                            >Email: fildineesoe@gmail.com</a
+                        >
+                    </li>
+                    <li><a href="">Address: 0123 Some place</a></li>
+                    <li><a href="">Some country</a></li>
+                </ul>
+                <div class="navbar__feature">
+                    <div class="title">Newsletter</div>
+                    <div>
+                        <input
+                            class="btn"
+                            type="text"
+                            placeholder="Enter your email address"
+                        /><i class="icon icon-nav"></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="footer--info">
+                <p>© 2021 Hospital’s name All Rights Reserved by PNTEC-LTD</p>
+                <div class="social-group">
+                    <a href="#"><i class="icon icon-linkedin-2"> </i></a
+                    ><a href="#"><i class="icon icon-fb-2"></i></a
+                    ><a href="#"><i class="icon icon-itg-2"></i></a>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+        <!-- Slick carousel -->
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <!-- my script -->
+        <script src="./assets/script.js"></script>
+    </body>
+</html>

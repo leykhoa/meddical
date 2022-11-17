@@ -1,0 +1,102 @@
+@import "variables";
+
+.slick-custom {
+    margin: 0 auto;
+    width: 100%;
+    .slider {
+        &__item {
+            transform: scale(0.9);
+            transition: all 300ms ease;
+            bottom: 0;
+            overflow: hidden;
+            opacity: 1;
+
+            img {
+                border-radius: 5px 5px 0px 0px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .slick-center {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .slick-dots li button:before {
+        font-size: 12px;
+        color: $accent;
+        opacity: 1;
+    }
+    .slick-dots li.slick-active button:before {
+        color: $primary;
+        opacity: 1;
+    }
+}
+
+.slick-custom-center {
+    margin: 0 auto;
+    width: 100%;
+    .slider {
+        &__item {
+            transform: scale(0.9);
+            transition: all 300ms ease;
+            bottom: 0;
+            overflow: hidden;
+            opacity: 0.2;
+
+            img {
+                border-radius: 5px 5px 0px 0px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .slick-center {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .slick-dots li button:before {
+        font-size: 12px;
+        color: $accent;
+        opacity: 1;
+    }
+    .slick-dots li.slick-active button:before {
+        color: $primary;
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .slick-custom {
+        .slider {
+            &__item {
+                transition: all 300ms ease;
+                bottom: 0;
+                overflow: hidden;
+                opacity: 1;
+            }
+        }
+        .slick-center {
+            opacity: 1;
+        }
+        .slick-dots li button:before {
+            font-size: 18px;
+        }
+    }
+    .slick-custom-center {
+        .slider {
+            &__item {
+                transition: all 300ms ease;
+                bottom: 0;
+                overflow: hidden;
+                opacity: 1;
+            }
+        }
+        .slick-center {
+            opacity: 1;
+        }
+        .slick-dots li button:before {
+            font-size: 18px;
+        }
+    }
+}
